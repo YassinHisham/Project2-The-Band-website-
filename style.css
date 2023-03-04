@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+/* navbar start */
+header {
+    height: 50px;
+    background-color: #000;
+}
+nav {
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+ul.first-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+ul.first-menu li.first-list {
+    list-style: none;
+    padding: 15px 25px 15px 25px;
+}
+ul.first-menu li.first-list a.first-link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul.first-menu li.first-list:hover {
+    background-color: whitesmoke;
+}
+ul.first-menu li.first-list:hover a.first-link {
+    color: #000;
+}
+ul.first-menu li.first-list.search-list {
+    list-style: none;
+    margin-left: auto;
+}
+ul.first-menu li.first-list.search-list:hover {
+    background-color: red;
+}
+ul.first-menu li.first-list a.first-link.dropdown-icon i {
+    margin-left: 5px;
+}
+li.more-list {
+    position: relative;
+}
+li.more-list:hover ul.second-menu {
+    display: block;
+}
+ul.second-menu {
+    background-color: #fff;
+    width: 160px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    display: none;
+}
+ul.second-menu li.second-list {
+    list-style-type: none;
+    width: 100%;
+    padding: 5px 0 5px 5px;
+}
+ul.second-menu li.second-list:hover {
+    background-color: #eee;
+}
+ul.second-menu li.second-list a.second-link {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+/* navbar end */
+/* section1 start */
+section h3,
+p {
+    text-align: center;
+}
+.h3-1 {
+    padding-bottom: 10px;
+}
+section.animation-section {
+    width: 100%;
+    height: 105vh;
+    background-image: url(./pics/nyy.jpg);
+    background-size: cover;
+    animation-name: animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animation {
+    33% {
+        background-image: url(./pics/laa.jpg);
+        background-size: cover;
+    }
+    66% {
+        background-image: url(./pics/chicagoo.jpg);
+        background-size: cover;
+    }
+}
+/* section1 end */
+/* section2 start */
+.container-1 {
+    margin: 30px 270px 70px 270px;
+}
+.h2-s2,
+.p1-s2 {
+    text-align: center;
+}
+.p2-s2 {
+    text-align: start;
+}
+.h2-s2 {
+    padding: 10px 0 10px 0;
+    letter-spacing: 7px;
+}
+.p1-s2 {
+    padding: 10px 0 10px 0;
+    font-style: italic;
+    opacity: 0.5;
+}
+.ds-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    height: 100%;
+}
+.img-s2 {
+    width: 13vw;
+    height: 32vh;
+    padding-top: 15px;
+}
+/* section2 end */
+/* section3 start */
+.container-2 {
+    margin: 10px 250px;
+}
+.tour-sec {
+    background-color: #000;
+    height: 165vh;
+}
+.h-s3 {
+    padding: 75px 30px 50px 30px;
+}
+.h2-s3,
+.p1-s3 {
+    text-align: center;
+    color: white;
+}
+.h2-s3 {
+    letter-spacing: 7px;
+    padding-bottom: 15px;
+}
+.p1-s3 {
+    opacity: 0.5;
+    font-style: italic;
+}
+.ul-s3 {
+    list-style: none;
+    padding: 20px 0;
+}
+.li-s3,
+.li-s3 {
+    background-color: white;
+    color: rgb(0, 0, 0, 0.8);
+    border: rgba(0, 0, 0, 0.126) solid 1px;
+    padding: 10px 20px;
+}
+.sp-1,
+.sp-2 {
+    width: 10px;
+    height: 5px;
+    color: white;
+    background-color: #ea0000ed;
+    margin-left: 10px;
+    padding: 0 6px 0 6px;
+}
+.sp-3 {
+    width: 5px;
+    height: 5px;
+    border: none;
+    border-radius: 50px;
+    background-color: #000;
+    color: white;
+    padding: 2px 8px 2px 8px;
+    position: relative;
+    left: 50vw;
+}
+.pp {
+    text-align: start;
+    padding: 3px 0;
+}
+.pp-s3 {
+    padding: 0 10px 0 10px;
+}
+.dt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.dt-child {
+    background-color: white;
+    width: 250px;
+    height: 460px;
+}
+.img-s3 {
+    width: 100%;
+    height: 230px;
+}
+.img-s3:hover {
+    opacity: 0.5;
+}
+.btn-s3 {
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 90px;
+    height: 35px;
+    background-color: #000;
+    color: white;
+}
+.btn-s3:hover {
+    background-color: rgb(180, 180, 180);
+    color: #000;
+    border: none;
+}
+/* section3 end */
+/* section4 start */
+.h2-s4,
+.p1-s4 {
+    text-align: center;
+}
+.p1-s4 {
+    font-style: italic;
+    opacity: 0.8;
+}
+.h2-s4 {
+    padding: 50px 0 20px 0;
+    letter-spacing: 7px;
+}
+.container-3 {
+    margin: 10px 20px;
+}
+.contact-sec {
+    height: 480px;
+}
+.s4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.input-1,
+.input-2 {
+    width: 175px;
+    height: 35px;
+    padding-left: 5px;
+}
+.input-2 {
+    margin-left: 15px;
+}
+.input-3 {
+    width: 368px;
+    height: 35px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+.btn-s4 {
+    width: 80px;
+    height: 35px;
+    background-color: #000;
+    color: white;
+    font-size: large;
+    position: relative;
+    left: 288px;
+    margin-top: 10px;
+}
+.btn-s4:hover {
+    background-color: rgb(180, 180, 180);
+    color: #000;
+    border: none;
+}
+.s4-2 {
+    display: flex;
+    flex-direction: column;
+}
+.p2-s4,
+.p3-s4,
+.p4-s4 {
+    text-align: start;
+    margin-left: 20px;
+    font-weight: 900;
+}
+.img-4 {
+    width: 100%;
+    height: 90vh;
+}
+.s4-contact {
+    display: flex;
+    padding: 7px 0;
+}
+/* section4 end */
+/* footer start */
+footer {
+    height: 35vh;
+}
+.footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+}
+.footer-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Y {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-2 {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+.icon-f {
+    padding: 0 3px;
+}
+.icon-f:hover {
+    color: rgb(167, 167, 167);
+}
+/* footer end */
